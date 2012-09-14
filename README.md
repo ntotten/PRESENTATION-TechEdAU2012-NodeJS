@@ -8,6 +8,7 @@ This is the demo that was built in my Node.js and Windows Azure talk at TechEd A
 ## Hello Node
 
 * node-server snippet
+* node server.js
 
 ## New Express Site
 
