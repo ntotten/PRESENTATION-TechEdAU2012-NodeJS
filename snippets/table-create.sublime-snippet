@@ -1,0 +1,15 @@
+<snippet>
+	<content><![CDATA[
+var azure = require('azure');
+var tableService = azure.createTableService('accountname', 'accountkey');
+tableService.createTableIfNotExists('messages', function(error){
+    if(!error){
+        // Table exists or created
+    }
+});
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>

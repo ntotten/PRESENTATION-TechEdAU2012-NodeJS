@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+	var entity = {
+        PartitionKey: 'news',
+        RowKey: (new Date()).getTime() + "_" + Math.floor(Math.random()*1000),
+        Message: data,
+      }
+      tableService.insertEntity('messages', entity, function(error){
+        if(!error){
+         // Entity inserted
+        }
+      });
+]]></content>
+	<!-- Optional: Set a tabTrigger to define how to trigger the snippet -->
+	<!-- <tabTrigger>hello</tabTrigger> -->
+	<!-- Optional: Set a scope to limit where the snippet will trigger -->
+	<!-- <scope>source.python</scope> -->
+</snippet>
